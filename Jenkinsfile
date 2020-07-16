@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'node --version'
+                sh 'mvn --version'
                 docker.image('swapy25/maven').withRun {c ->
                      sh 'mvn --version'
                  }
