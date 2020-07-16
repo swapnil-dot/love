@@ -6,7 +6,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn --version'
-                Image.run([-p 8080:8080, -d])
+                Image.run()
             }
         }
     }
